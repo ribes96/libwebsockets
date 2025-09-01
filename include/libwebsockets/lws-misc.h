@@ -178,6 +178,10 @@ lws_buflist_destroy_all_segments(struct lws_buflist **head);
 LWS_VISIBLE LWS_EXTERN void
 lws_buflist_describe(struct lws_buflist **head, void *id, const char *reason);
 
+LWS_VISIBLE LWS_EXTERN void *
+lws_buflist_get_frag_start_or_NULL(struct lws_buflist **head);
+
+
 
 /*
  * Optional helpers for closely-managed stream flow control.  These are useful
